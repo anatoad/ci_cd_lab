@@ -20,11 +20,11 @@ jobs:
       - name: Install dependencies
         run: go mod download
 
-    # TODO 01 - Add a step to run tests
+      # TODO 01 - Add a step to run tests
       - name: Run tests
-	run: go test main_test.go
+        run: go test main_test.go
 
-    # TODO 02 - Make sure that this job is run before `compile`
+      # TODO 02 - Make sure that this job is run before `compile`
 
   compile:
     needs: test
