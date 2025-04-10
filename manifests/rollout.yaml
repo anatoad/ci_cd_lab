@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: webserver
-          image: ghcr.io/anatoad/ci_cd_lab:latest
+          image: ghcr.io/anatoad/ci_cd_lab:sha256:496bfd77fc26a7b7aa037bcb2587a0e94644b8a804f003c781edb52a71d3016e
           ports:
             - containerPort: 8080
           imagePullPolicy: Always
